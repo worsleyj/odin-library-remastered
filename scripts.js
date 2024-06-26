@@ -82,6 +82,7 @@ function displayBook(book) {
     delBtn.innerText = 'x';
     delBtn.addEventListener('click', () => {
         libraryTable.deleteRow(book.index+1);
+        console.log(index)
     })
 
     let remove = row.insertCell(4);
@@ -104,7 +105,7 @@ index++;
 const book3 = new Book("Earth Abides", "George R. Stewart", 325, false, index)
 index++;
 const book4 = new Book("The Lightning Thief", "Rick Riordan", 377, true, index)
-
+index++;
 
 addToLibrary(book)
 addToLibrary(book2)
